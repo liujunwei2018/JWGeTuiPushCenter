@@ -7,12 +7,15 @@
 //
 
 #import "JWAppDelegate.h"
+#import <JWGeTuiPushManager.h>
 
 @implementation JWAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    [[JWGeTuiPushManager sharedInstance] jw_configNotificationiAppDelegateClass:NSClassFromString(@"Appdelegate") appId:@"awE4OXhOi26WJz1qMVKGt4" appKey:@"pA5En3S7qo6eYlCbrNesd1" appSecret:@"J3Hi70gWFDAx0BgVC55NT4" result:^(NSMutableDictionary * _Nonnull resultDict) {
+        NSLog(@"getui:\n%@",resultDict);
+    }];
     return YES;
 }
 

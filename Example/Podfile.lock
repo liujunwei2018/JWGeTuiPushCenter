@@ -1,0 +1,23 @@
+PODS:
+  - GTSDK (2.4.1.0)
+  - JWGeTuiPushCenter (0.1.0):
+    - GTSDK
+
+DEPENDENCIES:
+  - JWGeTuiPushCenter (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - GTSDK
+
+EXTERNAL SOURCES:
+  JWGeTuiPushCenter:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  GTSDK: 574d9067cd7e506dafc664801352a77e8214d1e0
+  JWGeTuiPushCenter: a8ab797b5ad7aa386cab8faf81b0752c7bba0bdd
+
+PODFILE CHECKSUM: c6518752524040e3dcabf8c2cebf2a2b621a6a81
+
+COCOAPODS: 1.8.4
