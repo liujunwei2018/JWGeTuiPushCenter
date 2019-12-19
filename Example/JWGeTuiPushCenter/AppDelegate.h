@@ -1,5 +1,5 @@
 //
-//  JWAppDelegate.h
+//  AppDelegate.h
 //  JWGeTuiPushCenter
 //
 //  Created by liujunwei2018 on 12/18/2019.
@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface JWAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

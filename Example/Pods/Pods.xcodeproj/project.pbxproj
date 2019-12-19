@@ -19,23 +19,18 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		09C2EA0E6F5464F4F31E1AD9581588FB /* JWGeTuiPushTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F469E5599EC51076BF317DBBD49EF8A /* JWGeTuiPushTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		23B07A8CA7C18B5BC8F2E2555B7CB70C /* JWGeTuiPushTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFEB7AC1A93469CCC130AB3038C5611 /* JWGeTuiPushTool.m */; };
-		4FBE968E576433381BF9D3BC9DD59B58 /* JWGeTuiPushCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B53D89CF83F8D14F96B32D23DC50A92 /* JWGeTuiPushCenter-dummy.m */; };
-		867A17E92888AD4D045739DB08A1FB90 /* JWGeTuiPushManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3A676410F8B2406A72DAC2DF0C1F5A /* JWGeTuiPushManager.m */; };
+		34AE75C9DBDC348E4838B0720CA48D8F /* JWGeTuiPushCenter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D43D280194C75FF160D77E8C6410969D /* JWGeTuiPushCenter-dummy.m */; };
+		3862700652FE859AFE41CEB52CD86862 /* JWGeTuiPushTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C9E55291B9E8521B047AB393DDBDC59 /* JWGeTuiPushTool.m */; };
+		4E350A5A4860AD050AE1AD742C9CA97C /* NSObject+JWPushGeTuiManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 929F16E97B7D3AF35F22980F55EEFB15 /* NSObject+JWPushGeTuiManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		862EAA4CEC3BC2319581B415753BD7EF /* JWGeTuiPushTool.h in Headers */ = {isa = PBXBuildFile; fileRef = BA22B955C2BA75E2111142F06FE7F846 /* JWGeTuiPushTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A0E8B61098FC0443B888EFD972BF24EA /* JWGeTuiPushCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = DB82CA71A90757226A9091A511FE7223 /* JWGeTuiPushCenter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BF2824C1CB982171CDC3ED0A50755C59 /* Pods-JWGeTuiPushCenter_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFDFE50AC4DB2944C7ED448C695059F2 /* Pods-JWGeTuiPushCenter_Tests-dummy.m */; };
-		EAE35CD96A1B50AAE7A62F8D14C3240B /* JWGeTuiPushManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E7CEDDFB2AA56F98EB74AB2A507B1E2E /* JWGeTuiPushManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D7D2B14BF22E61E4254B3321DDE61AC6 /* JWGeTuiPushCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = E067558B4AEA5D9E56188CD966610654 /* JWGeTuiPushCenter.m */; };
+		E4584B6BA56CA16689837A7264B10600 /* NSObject+JWPushGeTuiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6926768860B4415091C3DB2311D19C60 /* NSObject+JWPushGeTuiManager.m */; };
 		F15C254C77619F2EC4E8B365C5AAAF19 /* Pods-JWGeTuiPushCenter_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E784F8F8E89F7FD4244A9CC9425AA74C /* Pods-JWGeTuiPushCenter_Example-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		02738D2696A51EFD4A7AE2DE87AB7BDC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A0DC60C966312FA79A138A075D99BB51;
-			remoteInfo = GTSDK;
-		};
 		34A974A7E7EFDBF18B52668540549EF2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -50,6 +45,13 @@
 			remoteGlobalIDString = 2E7588B33A72AF0A766A02DDEBF81FB1;
 			remoteInfo = "Pods-JWGeTuiPushCenter_Example";
 		};
+		937BCC858C89A0DCB0D8C47419263F85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A0DC60C966312FA79A138A075D99BB51;
+			remoteInfo = GTSDK;
+		};
 		AC510A767F1495305A594921A93092E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -61,35 +63,37 @@
 
 /* Begin PBXFileReference section */
 		062C1CAD9F949846BFDEF69AFE93C38A /* Pods-JWGeTuiPushCenter_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWGeTuiPushCenter_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		0FFEB7AC1A93469CCC130AB3038C5611 /* JWGeTuiPushTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWGeTuiPushTool.m; path = JWGeTuiPushCenter/Classes/JWGeTuiPushTool.m; sourceTree = "<group>"; };
+		1C9E55291B9E8521B047AB393DDBDC59 /* JWGeTuiPushTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWGeTuiPushTool.m; path = JWGeTuiPushCenter/Classes/JWGeTuiPushTool.m; sourceTree = "<group>"; };
+		1CFE7B615C56D612E694F9122F1F450A /* JWGeTuiPushCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWGeTuiPushCenter.xcconfig; sourceTree = "<group>"; };
 		23E6383F55A00BE20C6C820061530B26 /* GTSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GTSDK.xcconfig; sourceTree = "<group>"; };
-		2DE203D2C5F7DB94F8E3E827BBBCA6BC /* JWGeTuiPushCenter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWGeTuiPushCenter.xcconfig; sourceTree = "<group>"; };
-		439FB08B113490575DC6F5BF86FA0381 /* JWGeTuiPushCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWGeTuiPushCenter-prefix.pch"; sourceTree = "<group>"; };
-		4A3A676410F8B2406A72DAC2DF0C1F5A /* JWGeTuiPushManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWGeTuiPushManager.m; path = JWGeTuiPushCenter/Classes/JWGeTuiPushManager.m; sourceTree = "<group>"; };
+		5209B8756A070F4F19279A6B418A272A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5B323DB7CFDC1A002A7F79F03171F12A /* Pods-JWGeTuiPushCenter_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWGeTuiPushCenter_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		66D750A2CDD3ED828D0322F12AF98D4E /* libJWGeTuiPushCenter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libJWGeTuiPushCenter.a; path = libJWGeTuiPushCenter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6926768860B4415091C3DB2311D19C60 /* NSObject+JWPushGeTuiManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+JWPushGeTuiManager.m"; path = "JWGeTuiPushCenter/Classes/NSObject+JWPushGeTuiManager.m"; sourceTree = "<group>"; };
 		6AD8A510151BBF24A13FB4B81FBD0F04 /* Pods-JWGeTuiPushCenter_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWGeTuiPushCenter_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6B53D89CF83F8D14F96B32D23DC50A92 /* JWGeTuiPushCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWGeTuiPushCenter-dummy.m"; sourceTree = "<group>"; };
 		747D4A2295AACBA764C0AA8816AA0C72 /* libPods-JWGeTuiPushCenter_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JWGeTuiPushCenter_Example.a"; path = "libPods-JWGeTuiPushCenter_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ABA5032F529F2651288DC1600DF8963 /* Pods-JWGeTuiPushCenter_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWGeTuiPushCenter_Example.release.xcconfig"; sourceTree = "<group>"; };
-		7F469E5599EC51076BF317DBBD49EF8A /* JWGeTuiPushTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWGeTuiPushTool.h; path = JWGeTuiPushCenter/Classes/JWGeTuiPushTool.h; sourceTree = "<group>"; };
+		8493855E8EFF1F0AEADADA79C85D9996 /* JWGeTuiPushCenter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWGeTuiPushCenter-prefix.pch"; sourceTree = "<group>"; };
 		85114F7140C059590FE0455DE322EA06 /* Pods-JWGeTuiPushCenter_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JWGeTuiPushCenter_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		929F16E97B7D3AF35F22980F55EEFB15 /* NSObject+JWPushGeTuiManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+JWPushGeTuiManager.h"; path = "JWGeTuiPushCenter/Classes/NSObject+JWPushGeTuiManager.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F8CEE3519F8908D7E51F6955501D658 /* Pods-JWGeTuiPushCenter_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWGeTuiPushCenter_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AFD640C6947DA7CE3BE6A8E358EBA30C /* GTSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTSDK.framework; sourceTree = "<group>"; };
-		B103ECC73C1691CEE5AA5F37BCA9078E /* JWGeTuiPushCenter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JWGeTuiPushCenter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB26CBE588AEEB8C3D368EF83BD71AE7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		C7E1DE20F0076295DA18CACAFA5F6099 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		BA22B955C2BA75E2111142F06FE7F846 /* JWGeTuiPushTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWGeTuiPushTool.h; path = JWGeTuiPushCenter/Classes/JWGeTuiPushTool.h; sourceTree = "<group>"; };
+		D4370B56B749E3FEBFE736C44D1E3609 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D43D280194C75FF160D77E8C6410969D /* JWGeTuiPushCenter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWGeTuiPushCenter-dummy.m"; sourceTree = "<group>"; };
 		D9B1C82C257082759ECE574BC0617CF0 /* libPods-JWGeTuiPushCenter_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JWGeTuiPushCenter_Tests.a"; path = "libPods-JWGeTuiPushCenter_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB82CA71A90757226A9091A511FE7223 /* JWGeTuiPushCenter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWGeTuiPushCenter.h; path = JWGeTuiPushCenter/Classes/JWGeTuiPushCenter.h; sourceTree = "<group>"; };
+		E067558B4AEA5D9E56188CD966610654 /* JWGeTuiPushCenter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JWGeTuiPushCenter.m; path = JWGeTuiPushCenter/Classes/JWGeTuiPushCenter.m; sourceTree = "<group>"; };
 		E784F8F8E89F7FD4244A9CC9425AA74C /* Pods-JWGeTuiPushCenter_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWGeTuiPushCenter_Example-dummy.m"; sourceTree = "<group>"; };
-		E7CEDDFB2AA56F98EB74AB2A507B1E2E /* JWGeTuiPushManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JWGeTuiPushManager.h; path = JWGeTuiPushCenter/Classes/JWGeTuiPushManager.h; sourceTree = "<group>"; };
 		E9E8BFBCC791F318059A09A3F9C6A922 /* Pods-JWGeTuiPushCenter_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JWGeTuiPushCenter_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		FA5305E7010BE4E6C0CFF92927468314 /* Pods-JWGeTuiPushCenter_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JWGeTuiPushCenter_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FCF336E0DB2ABFB84D56839961A306C9 /* JWGeTuiPushCenter.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = JWGeTuiPushCenter.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FFDFE50AC4DB2944C7ED448C695059F2 /* Pods-JWGeTuiPushCenter_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JWGeTuiPushCenter_Tests-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		451295930D7E6C82CA6BF06C3FCD5FD1 /* Frameworks */ = {
+		373FD6FF43256ECE81CA9F85B61D6E8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -113,12 +117,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2E52A5399C7E85F6148BA305997E9FCD /* Development Pods */ = {
+		55509B5BDB2362878CB09C3ABEE5277A /* JWGeTuiPushCenter */ = {
 			isa = PBXGroup;
 			children = (
-				FE6190D6C2E9D4F27D0B49D0BAAFF5FA /* JWGeTuiPushCenter */,
+				DB82CA71A90757226A9091A511FE7223 /* JWGeTuiPushCenter.h */,
+				E067558B4AEA5D9E56188CD966610654 /* JWGeTuiPushCenter.m */,
+				BA22B955C2BA75E2111142F06FE7F846 /* JWGeTuiPushTool.h */,
+				1C9E55291B9E8521B047AB393DDBDC59 /* JWGeTuiPushTool.m */,
+				929F16E97B7D3AF35F22980F55EEFB15 /* NSObject+JWPushGeTuiManager.h */,
+				6926768860B4415091C3DB2311D19C60 /* NSObject+JWPushGeTuiManager.m */,
+				63F96A8728F700A5B3D6A212029B3B42 /* Pod */,
+				79C2F6C0FB152BCEF1439AE5C16882EB /* Support Files */,
 			);
-			name = "Development Pods";
+			name = JWGeTuiPushCenter;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		63F96A8728F700A5B3D6A212029B3B42 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FCF336E0DB2ABFB84D56839961A306C9 /* JWGeTuiPushCenter.podspec */,
+				5209B8756A070F4F19279A6B418A272A /* LICENSE */,
+				D4370B56B749E3FEBFE736C44D1E3609 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		66E16B48824F70840FE618D7D0465DF3 /* Products */ = {
@@ -131,14 +153,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		748E949ACE33002941CC2C1110D58EA0 /* Pod */ = {
+		79C2F6C0FB152BCEF1439AE5C16882EB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B103ECC73C1691CEE5AA5F37BCA9078E /* JWGeTuiPushCenter.podspec */,
-				C7E1DE20F0076295DA18CACAFA5F6099 /* LICENSE */,
-				BB26CBE588AEEB8C3D368EF83BD71AE7 /* README.md */,
+				1CFE7B615C56D612E694F9122F1F450A /* JWGeTuiPushCenter.xcconfig */,
+				D43D280194C75FF160D77E8C6410969D /* JWGeTuiPushCenter-dummy.m */,
+				8493855E8EFF1F0AEADADA79C85D9996 /* JWGeTuiPushCenter-prefix.pch */,
 			);
-			name = Pod;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JWGeTuiPushCenter";
 			sourceTree = "<group>";
 		};
 		80303520A2A619DC4BC8DDF51202A8C1 /* GTSDK */ = {
@@ -180,22 +203,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C9B1530498F33D103E3E13731C9366E8 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2DE203D2C5F7DB94F8E3E827BBBCA6BC /* JWGeTuiPushCenter.xcconfig */,
-				6B53D89CF83F8D14F96B32D23DC50A92 /* JWGeTuiPushCenter-dummy.m */,
-				439FB08B113490575DC6F5BF86FA0381 /* JWGeTuiPushCenter-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/JWGeTuiPushCenter";
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				2E52A5399C7E85F6148BA305997E9FCD /* Development Pods */,
+				DC5CA2D74822BBB97D6B37060C0881D0 /* Development Pods */,
 				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				93F8CA9D64BA9D6F244C608BA23CDC38 /* Pods */,
 				66E16B48824F70840FE618D7D0465DF3 /* Products */,
@@ -217,6 +229,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC5CA2D74822BBB97D6B37060C0881D0 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55509B5BDB2362878CB09C3ABEE5277A /* JWGeTuiPushCenter */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		F69ECCB38E43D62D3A7C07245F144821 /* Pods-JWGeTuiPushCenter_Tests */ = {
@@ -241,20 +261,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		FE6190D6C2E9D4F27D0B49D0BAAFF5FA /* JWGeTuiPushCenter */ = {
-			isa = PBXGroup;
-			children = (
-				E7CEDDFB2AA56F98EB74AB2A507B1E2E /* JWGeTuiPushManager.h */,
-				4A3A676410F8B2406A72DAC2DF0C1F5A /* JWGeTuiPushManager.m */,
-				7F469E5599EC51076BF317DBBD49EF8A /* JWGeTuiPushTool.h */,
-				0FFEB7AC1A93469CCC130AB3038C5611 /* JWGeTuiPushTool.m */,
-				748E949ACE33002941CC2C1110D58EA0 /* Pod */,
-				C9B1530498F33D103E3E13731C9366E8 /* Support Files */,
-			);
-			name = JWGeTuiPushCenter;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -265,12 +271,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81A43CFCAC72CB1B28BF16ABF2E4F625 /* Headers */ = {
+		D219A3599D3466ECE4C988AC1901933E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EAE35CD96A1B50AAE7A62F8D14C3240B /* JWGeTuiPushManager.h in Headers */,
-				09C2EA0E6F5464F4F31E1AD9581588FB /* JWGeTuiPushTool.h in Headers */,
+				A0E8B61098FC0443B888EFD972BF24EA /* JWGeTuiPushCenter.h in Headers */,
+				862EAA4CEC3BC2319581B415753BD7EF /* JWGeTuiPushTool.h in Headers */,
+				4E350A5A4860AD050AE1AD742C9CA97C /* NSObject+JWPushGeTuiManager.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,16 +312,16 @@
 		};
 		39586F7D2679DADEE671E7E9D4CB956C /* JWGeTuiPushCenter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F9F704418FF92054707CA8480247161 /* Build configuration list for PBXNativeTarget "JWGeTuiPushCenter" */;
+			buildConfigurationList = DFB273E9913877D6D9A1E34EF5AECC61 /* Build configuration list for PBXNativeTarget "JWGeTuiPushCenter" */;
 			buildPhases = (
-				81A43CFCAC72CB1B28BF16ABF2E4F625 /* Headers */,
-				A682F583276AFEA1F82F14FE22238A0E /* Sources */,
-				451295930D7E6C82CA6BF06C3FCD5FD1 /* Frameworks */,
+				D219A3599D3466ECE4C988AC1901933E /* Headers */,
+				89DD4C9B60F20302C5C5A1D090564A94 /* Sources */,
+				373FD6FF43256ECE81CA9F85B61D6E8C /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				93BE9F3B6F1A9687D94C72982A299E25 /* PBXTargetDependency */,
+				A63E1D135770F85137DB1DEF12F68EE4 /* PBXTargetDependency */,
 			);
 			name = JWGeTuiPushCenter;
 			productName = JWGeTuiPushCenter;
@@ -378,21 +385,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		89DD4C9B60F20302C5C5A1D090564A94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34AE75C9DBDC348E4838B0720CA48D8F /* JWGeTuiPushCenter-dummy.m in Sources */,
+				D7D2B14BF22E61E4254B3321DDE61AC6 /* JWGeTuiPushCenter.m in Sources */,
+				3862700652FE859AFE41CEB52CD86862 /* JWGeTuiPushTool.m in Sources */,
+				E4584B6BA56CA16689837A7264B10600 /* NSObject+JWPushGeTuiManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		960288FE622CAAB86C2751401FE343CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F15C254C77619F2EC4E8B365C5AAAF19 /* Pods-JWGeTuiPushCenter_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A682F583276AFEA1F82F14FE22238A0E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4FBE968E576433381BF9D3BC9DD59B58 /* JWGeTuiPushCenter-dummy.m in Sources */,
-				867A17E92888AD4D045739DB08A1FB90 /* JWGeTuiPushManager.m in Sources */,
-				23B07A8CA7C18B5BC8F2E2555B7CB70C /* JWGeTuiPushTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,15 +425,40 @@
 			target = 39586F7D2679DADEE671E7E9D4CB956C /* JWGeTuiPushCenter */;
 			targetProxy = AC510A767F1495305A594921A93092E1 /* PBXContainerItemProxy */;
 		};
-		93BE9F3B6F1A9687D94C72982A299E25 /* PBXTargetDependency */ = {
+		A63E1D135770F85137DB1DEF12F68EE4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GTSDK;
 			target = A0DC60C966312FA79A138A075D99BB51 /* GTSDK */;
-			targetProxy = 02738D2696A51EFD4A7AE2DE87AB7BDC /* PBXContainerItemProxy */;
+			targetProxy = 937BCC858C89A0DCB0D8C47419263F85 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		1EBF265A428EE98FB84083D9AB6ED246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CFE7B615C56D612E694F9122F1F450A /* JWGeTuiPushCenter.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JWGeTuiPushCenter/JWGeTuiPushCenter-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JWGeTuiPushCenter;
+				PRODUCT_NAME = JWGeTuiPushCenter;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		365B4AD7B777BD54DC673C474D9803A1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 062C1CAD9F949846BFDEF69AFE93C38A /* Pods-JWGeTuiPushCenter_Tests.debug.xcconfig */;
@@ -468,30 +501,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		3D92EA2491CC34FAF92EE58A0ECED148 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DE203D2C5F7DB94F8E3E827BBBCA6BC /* JWGeTuiPushCenter.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/JWGeTuiPushCenter/JWGeTuiPushCenter-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = JWGeTuiPushCenter;
-				PRODUCT_NAME = JWGeTuiPushCenter;
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
 		};
 		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -652,9 +661,23 @@
 			};
 			name = Debug;
 		};
-		904C1C0D5B7AF1883076CA85994AC802 /* Release */ = {
+		AFA80A9B306C1BCC393F418FDAC8004C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2DE203D2C5F7DB94F8E3E827BBBCA6BC /* JWGeTuiPushCenter.xcconfig */;
+			baseConfigurationReference = 23E6383F55A00BE20C6C820061530B26 /* GTSDK.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E5448537A466669864E062C5D73EAEB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CFE7B615C56D612E694F9122F1F450A /* JWGeTuiPushCenter.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -673,23 +696,8 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
-		};
-		AFA80A9B306C1BCC393F418FDAC8004C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23E6383F55A00BE20C6C820061530B26 /* GTSDK.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
+			name = Debug;
 		};
 		EB45FD3540A83BFB85C4F600712FC8CB /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -715,15 +723,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F9F704418FF92054707CA8480247161 /* Build configuration list for PBXNativeTarget "JWGeTuiPushCenter" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3D92EA2491CC34FAF92EE58A0ECED148 /* Debug */,
-				904C1C0D5B7AF1883076CA85994AC802 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		46CEA6B96A5AAABE721727899D10E26F /* Build configuration list for PBXAggregateTarget "GTSDK" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -756,6 +755,15 @@
 			buildConfigurations = (
 				365B4AD7B777BD54DC673C474D9803A1 /* Debug */,
 				7BC3DD3E9A1F3BD1E6CD8BAD1AD839B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFB273E9913877D6D9A1E34EF5AECC61 /* Build configuration list for PBXNativeTarget "JWGeTuiPushCenter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E5448537A466669864E062C5D73EAEB6 /* Debug */,
+				1EBF265A428EE98FB84083D9AB6ED246 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

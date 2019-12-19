@@ -1,20 +1,21 @@
 //
-//  JWAppDelegate.m
+//  AppDelegate.m
 //  JWGeTuiPushCenter
 //
 //  Created by liujunwei2018 on 12/18/2019.
 //  Copyright (c) 2019 liujunwei2018. All rights reserved.
 //
 
-#import "JWAppDelegate.h"
-#import <JWGeTuiPushManager.h>
+#import "AppDelegate.h"
+#import <JWGeTuiPushCenter.h>
 
-@implementation JWAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    [[JWGeTuiPushManager sharedInstance] jw_configNotificationiAppDelegateClass:NSClassFromString(@"Appdelegate") appId:@"awE4OXhOi26WJz1qMVKGt4" appKey:@"pA5En3S7qo6eYlCbrNesd1" appSecret:@"J3Hi70gWFDAx0BgVC55NT4" result:^(NSMutableDictionary * _Nonnull resultDict) {
+    [[JWGeTuiPushCenter sharedInstance] xnb_configNotificationiAppDelegateClass:NSClassFromString(@"AppDelegate") appId:@"7cwKG9krlI7tXAXBIFNDU1" appKey:@"GihA8vSKfq76OVA1Qsfas2" appSecret:@"qvHkxdv456A6nxuFFGUju5" notificationResult:^(NSMutableDictionary * _Nonnull resultDict) {
         NSLog(@"getui:\n%@",resultDict);
+        
     }];
     return YES;
 }

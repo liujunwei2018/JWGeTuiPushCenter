@@ -1,18 +1,15 @@
 //
-//  JWGeTuiPushCenter.h
-//  JWGeTuiPushCenter_Example
+//  NSObject+JWPushGeTuiManager.h
+//  JWGeTuiPushCenter
 //
-//  Created by 刘君威 on 2019/12/18.
-//  Copyright © 2019 liujunwei2018. All rights reserved.
+//  Created by 刘君威 on 2019/12/19.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JWGeTuiPushManager : NSObject
-
-+ (instancetype)sharedInstance;
+@interface NSObject (JWPushGeTuiManager)
 
 /**
  配置推送相关的信息, 推荐在AppDelegate的+load()方法中调用
